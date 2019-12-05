@@ -6,21 +6,21 @@ namespace Yuloh\Math;
 
 use Google\Protobuf\Internal\Message;
 
-class CalculatorClient implements CalculatorInterface
+class CalculadoraClient implements CalculadoraInterface
 {
-    public function add(AddRequest $request): AddReply
+    public function adicao(AdicaoRequest $request): AdicaoReply
     {
-    	$reply = new AddReply();
-    	$reply->mergeFromString($this->makeRequest($request, 'add'));
+    	$reply = new AdicaoReply();
+    	$reply->mergeFromString($this->makeRequest($request, 'adicao'));
 
     	return $reply;
     }
 
 
-    public function subtract(SubtractRequest $request): SubtractReply
+    public function subtracao(SubtracaoRequest $request): SubtracaoReply
     {
-    	$reply = new SubtractReply();
-    	$reply->mergeFromString($this->makeRequest($request, 'subtract'));
+    	$reply = new SubtracaoReply();
+    	$reply->mergeFromString($this->makeRequest($request, 'subtracao'));
 
     	return $reply;
     }

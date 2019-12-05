@@ -4,25 +4,25 @@ package yuloh.math;
 
 option php_generic_services = true;
 
-service Calculator {
-    rpc add (AddRequest) returns (AddReply) {}
-    rpc subtract (SubtractRequest) returns (SubtractReply) {}
+service Calculadora {
+    rpc add (AdicaoRequest) returns (AdicaoReply) {}
+    rpc Subtracao (SubtracaoRequest) returns (SubtracaoReply) {}
 }
 
-message AddRequest {
+message AdicaoRequest {
     int32 x = 1;
     int32 y = 2;
 }
 
-message AddReply {
+message AdicaoReply {
     int32 sum = 1;
 }
 
-message SubtractRequest {
+message SubtracaoRequest {
     int32 x = 1;
     int32 y = 2;
 }
 
-message SubtractReply {
+message SubtracaoReply {
     int32 diff = 1;
 }

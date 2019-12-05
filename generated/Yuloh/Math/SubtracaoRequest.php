@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>yuloh.math.AddRequest</code>
+ * Generated from protobuf message <code>yuloh.math.SubtracaoRequest</code>
  */
-class AddRequest extends \Google\Protobuf\Internal\Message
+class SubtracaoRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>int32 x = 1;</code>

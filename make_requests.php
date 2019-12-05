@@ -1,19 +1,18 @@
 <?php
 
-use Yuloh\Math\AddRequest;
-use Yuloh\Math\CalculatorClient;
-use Yuloh\Math\SubtractRequest;
+use Yuloh\Math\AdicaoRequest;
+use Yuloh\Math\CalculadoraClient;
+use Yuloh\Math\SubtracaoRequest;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$calculator = new CalculatorClient();
+$calculadora = new CalculadoraClient();
 
-$req   = (new AddRequest())->setX(2)->setY(4);
-$reply = $calculator->add($req);
+$req   = (new AdicaoRequest())->setX(1)->setY(4);
+$reply = $calculadora->adicao($req);
 
-echo '2 + 4 = ' . $reply->getSum() . PHP_EOL;
-
-$req   = (new SubtractRequest())->setX(5)->setY(4);
-$reply = $calculator->subtract($req);
+echo '1 + 4 = ' . $reply->getSum() . PHP_EOL;
+$req   = (new SubtracaoRequest())->setX(5)->setY(4);
+$reply = $calculadora->subtracao($req);
 
 echo '5 - 4 = ' . $reply->getDiff() . PHP_EOL;

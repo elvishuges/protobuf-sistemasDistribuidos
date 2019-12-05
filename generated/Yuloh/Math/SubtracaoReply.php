@@ -9,14 +9,14 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>yuloh.math.AddReply</code>
+ * Generated from protobuf message <code>yuloh.math.SubtracaoReply</code>
  */
-class AddReply extends \Google\Protobuf\Internal\Message
+class SubtracaoReply extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>int32 sum = 1;</code>
+     * Generated from protobuf field <code>int32 diff = 1;</code>
      */
-    protected $sum = 0;
+    protected $diff = 0;
 
     /**
      * Constructor.
@@ -24,7 +24,7 @@ class AddReply extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type int $sum
+     *     @type int $diff
      * }
      */
     public function __construct($data = NULL) {
@@ -33,23 +33,23 @@ class AddReply extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 sum = 1;</code>
+     * Generated from protobuf field <code>int32 diff = 1;</code>
      * @return int
      */
-    public function getSum()
+    public function getDiff()
     {
-        return $this->sum;
+        return $this->diff;
     }
 
     /**
-     * Generated from protobuf field <code>int32 sum = 1;</code>
+     * Generated from protobuf field <code>int32 diff = 1;</code>
      * @param int $var
      * @return $this
      */
-    public function setSum($var)
+    public function setDiff($var)
     {
         GPBUtil::checkInt32($var);
-        $this->sum = $var;
+        $this->diff = $var;
 
         return $this;
     }
